@@ -96,7 +96,7 @@
     </div>
 
     <div class="actions">
-      <button class="export" onclick={downloadJspf}>JSPF</button>
+      <button class="export" onclick={downloadJspf}>JSON</button>
       <button class="export" onclick={downloadCsv}>CSV</button>
       <button class="copy" onclick={copyJson}>{copyLabel}</button>
     </div>
@@ -110,9 +110,10 @@
 
 <style>
   main {
-    width: 340px;
-    min-height: 200px;
-    padding: 16px;
+    width: 400px;
+    min-height: 240px;
+    padding: 20px;
+    font-size: 15px;
   }
 
   .center {
@@ -125,14 +126,14 @@
   }
 
   h1 {
-    font-size: 1.1em;
-    margin: 4px 0;
+    font-size: 1.3em;
+    margin: 6px 0;
     line-height: 1.3;
   }
 
   .badge {
     display: inline-block;
-    font-size: 0.7em;
+    font-size: 0.75em;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.05em;
@@ -150,19 +151,19 @@
   }
 
   .creator {
-    font-size: 0.85em;
+    font-size: 0.9em;
     margin: 0;
     opacity: 0.7;
   }
 
   .count {
-    font-size: 0.8em;
+    font-size: 0.85em;
     margin: 4px 0 8px;
     opacity: 0.6;
   }
 
   .tracks {
-    max-height: 260px;
+    max-height: 320px;
     overflow-y: auto;
     border: 1px solid rgba(128, 128, 128, 0.2);
     border-radius: 6px;
@@ -172,9 +173,9 @@
   .track {
     display: flex;
     flex-direction: column;
-    padding: 6px 10px;
+    padding: 8px 12px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.1);
-    font-size: 0.85em;
+    font-size: 0.9em;
   }
 
   .track:last-child {
@@ -197,11 +198,11 @@
 
   .actions button {
     flex: 1;
-    padding: 8px 12px;
+    padding: 10px 14px;
     border-radius: 6px;
     border: none;
     cursor: pointer;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: 500;
   }
 

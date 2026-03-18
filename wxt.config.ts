@@ -5,7 +5,7 @@ export default defineConfig({
   modules: ['@wxt-dev/module-svelte'],
   manifest: {
     name: 'Playlist Exporter',
-    description: 'Export playlists from Spotify and Apple Music as JSPF or CSV',
+    description: 'Export playlists from Spotify and Apple Music as JSON or CSV',
     permissions: ['storage'],
     web_accessible_resources: [
       {
